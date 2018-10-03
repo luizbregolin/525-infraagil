@@ -1,0 +1,6 @@
+---
+
+- name: instalando meu site DevOps
+  hosts: all
+  roles:
+   - web

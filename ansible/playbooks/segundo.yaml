@@ -1,0 +1,32 @@
+---
+
+- name: Instalando repositorio epel-release
+  hosts: automation
+  tasks:
+   - name: Instalando epel
+     yum:
+      name: epel-release
+      
+    
+- name: Minha segunda playbook
+  hosts: all
+  vars: 
+   - seunome: luiz
+  tasks:
+   - name: adicionando usuario
+     user:
+      name: developer
+     user:
+      name: devops
+     user:
+      name: "{{seunome}}"
+      
+   - name: Instalando pacotes geral
+     package:
+      name: 
+       - vim
+       - htop
+       - sl
+       - cowsay
+      state: present
+

@@ -1,0 +1,6 @@
+---
+
+- name: instalando docker
+  package:
+   name: docker
+   state: present

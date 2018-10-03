@@ -1,0 +1,8 @@
+---
+
+- name: Instalando Apache YUM
+  hosts: automation 
+  sudo: yes
+  tasks:
+    - name: install apache2
+      yum: name=apache2 state=latest

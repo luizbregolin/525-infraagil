@@ -1,0 +1,8 @@
+---
+
+- name: Inatalando Apache APT
+  hosts: docker devops
+  sudo: yes
+  tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest

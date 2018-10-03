@@ -1,0 +1,6 @@
+---
+
+- name: instaando puppet
+  hosts: all
+  roles:
+   - puppet

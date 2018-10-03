@@ -1,0 +1,11 @@
+---
+# tasks file for web
+
+- name: instalar o Apache2
+  include: install.yaml
+
+- name: instalado site
+  include: site.yaml 
+
+
+  
