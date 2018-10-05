@@ -1,0 +1,5 @@
+
+- name: executando a role de deploy
+  hosts: docker
+  roles:
+   - deploy
