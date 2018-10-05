@@ -1,0 +1,21 @@
+
+- name: Garantindo os pacotes basicos para nosso bluegreen
+  package:
+   name: 
+    - docker-ce
+    - nginx
+    - python-pip
+
+- name: instalando o docker-py
+  pip:
+   name: docker-py
+
+- name: garantindo os servicos do docker e nginx rodando
+  service:
+   name: "{{item}}"
+   state: started
+  with_items:
+   - nginx
+   - docker
+
+
